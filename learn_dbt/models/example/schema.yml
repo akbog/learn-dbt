@@ -28,3 +28,12 @@ models:
           - unique
           - not_null
   - name: dates
+
+sources:
+  - name: sample
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+      - name: orders
+      - name: lineitem
