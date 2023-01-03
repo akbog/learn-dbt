@@ -10,6 +10,7 @@
     )
 }}
 
+-- Use Sources instead of hardcoding table names
 select * from {{ ref('my_first_dbt_model') }}
 
 {% endsnapshot %}
